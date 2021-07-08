@@ -1,0 +1,124 @@
+/*---- Navigation Bar ----*/
+
+#logo {
+	margin: -1.2rem;
+	width: auto;
+	height: 70px;
+	border: 4px solid white;
+}
+
+#DateTime {
+	color: grey;
+}
+
+
+
+/*---- Page Content ----*/
+
+.description {
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -55%);
+	text-align: center;
+}
+
+.description h1 {
+	color: grey;
+}
+
+.description p {
+	font-size: 1.3rem;
+	line-height: 1.5;
+	color: grey;
+}
+
+.description button {
+	border: 1px solid #009999;
+	background: #009999;
+	color: #fff;
+}
+
+.description button:hover {
+	border: 1px solid #008080;
+	background: #008080;
+}
+
+
+
+/*---- Modal ----*/
+
+#demo-modal .modal-content {
+	border-radius: 0;
+	padding: 2rem;
+}
+
+#demo-modal .modal-header {
+	border-bottom: none;
+}
+
+#demo-modal h4 {
+    color: #000;
+    font-size: 30px;
+    margin: 0 0 25px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+#demo-modal .close {
+	background: #c0c3c8;
+    border-radius: 50%;
+	color: #fff;
+    font-size: 19px;
+	font-weight: normal;
+    height: 30px;
+    opacity: 0.5;
+    padding: 0;
+    position: absolute;
+    right: 26px;
+    text-align: center;
+    top: 26px;
+    width: 30px;
+}
+
+#demo-modal .close span {
+	position: relative;
+	top: -3px;
+}
+
+#demo-modal .form-control,
+#demo-modal .btn {
+	min-height: 46px;
+}
+
+#demo-modal .btn {
+	background-color: #1da098;
+	border: none;
+	color: #fff;
+	min-width: 150px;
+	transition: all 0.4s;
+}
+
+#demo-modal .btn:hover,
+#demo-modal .btn:focus {
+	background-color: #12968d;
+}
+
+
+
+/*---- Media Queries ----*/
+
+@media (max-width: 1021px) {
+	.description h1 {
+		font-size: 2rem;
+	}
+	.description p {
+		font-size: 1.2rem;
+	}
+}
+
+@media (max-width: 575.98px) {
+	#demo-modal .btn {
+		min-width: auto;
+	}
+}

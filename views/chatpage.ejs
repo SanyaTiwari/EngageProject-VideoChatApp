@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+		<title>Chat Page</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/chat.css">
+
+	</head>
+	
+	<body>
+	
+		<nav class="navbar navbar-expand-md justify-content-between">
+			<a class="navbar-brand" href="/chatpage">
+				<img id="logo" src="images/logo.png">
+			</a>
+			<span id='DateTime'></span>
+		</nav>
+
+		<hr id="hr">
+
+
+		<div class="join-container">
+
+			<header class="join-header">
+				<h1>Chat with Mitron</h1>
+			</header>
+
+			<main class="join-main">
+				<form action="chat.html">
+					<div class="form-control">
+						<label for="username">Username</label>
+						<input
+							type="text"
+							name="username"
+							id="username"
+							placeholder="Enter username..."
+							required
+						/>
+					</div>
+					<div class="form-control">
+						<label for="room">Room</label>
+						<select name="room" id="room">
+							<option value="Room 1">Room 1</option>
+							<option value="Room 2">Room 2</option>
+							<option value="Room 3">Room 3</option>
+							<option value="Room 4">Room 4</option>
+							<option value="Room 5">Room 5</option>
+							<option value="Room 6">Room 6</option>
+						</select>
+					</div>
+					<button type="submit" class="btn" onclick="JoinChat()">Join Chat</button>
+				</form>
+			</main>
+
+		</div>
+
+
+		<footer class="page-footer font-small stylish-color-dark pt-4">
+		  	<div class="footer-copyright text-center py-3">
+   				<a href="/home">Switch to VideoChat Page</a>
+  			</div>
+		</footer>
+
+		
+		<script src="js/jquery-3.5.1.min.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<script src="js/chat.js"></script>
+		
+	</body>
+	
+</html>

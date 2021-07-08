@@ -1,0 +1,121 @@
+/*---- Navigation Bar ----*/
+
+#logo {
+	margin: -1.2rem;
+	width: auto;
+	height: 70px;
+	border: 4px solid white;
+}
+
+#DateTime {
+	color: grey;
+}
+
+#hr {
+	margin-top: 0;
+}
+
+
+
+/*---- Page Content ----*/
+
+.main {
+	padding: 40px;
+	display: flex;
+	overflow-y: auto;
+}
+
+.left {
+	padding-top: 10px;
+	text-align: left;
+    width: 100vw;
+}
+
+.left h1 {
+	color: grey;
+	font-size: 3rem;
+}
+
+.left p {
+	font-size: 1.3rem;
+	line-height: 1.5;
+	color: grey;
+	padding-top: 15px;
+	padding-bottom: 25px;
+}
+
+.left button {
+	border: 1px solid #009999;
+	background: #009999;
+	color: #fff;
+}
+
+.left button:hover {
+	border: 1px solid #008080;
+	background: #008080;
+}
+
+#NewRoomBtn {
+	border-radius: 5px;
+	margin-right: 20px;
+}
+
+#IDinput {
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+}
+
+.right {
+    flex-direction: column;
+    flex-shrink: 1;
+    max-width: 35rem;
+    padding: 0 3em;
+}
+
+.right img {
+	width: 400px;
+}
+
+
+
+/*---- Media Queries ----*/
+
+@media (min-width: 1150px) {
+	#IDinput {
+		min-width: 320px;
+	}
+}
+
+@media (max-width: 1020px) {
+	.right {
+		padding-right: 2em;
+	}
+}
+
+@media (max-width: 1000px) {
+	.right {
+		padding-right: 1em;
+	}
+}
+
+@media (max-width: 984px) {
+	.main {
+		display: block;
+	}
+	.left {
+		text-align: center;
+	    width: 100%;
+	    padding-top: 0;
+	}
+	#NewRoomBtn {
+		margin-left: auto;
+	}
+	#JoinBtn {
+		margin-right: auto;
+	}
+	.right {
+		padding: 3rem 0;
+		width: 25rem;
+		margin: auto;
+	}
+}
