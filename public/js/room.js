@@ -8,7 +8,7 @@ myVideo.muted = true;
 
 var peer = new Peer(undefined, {
 	path: "/peerjs",
-	host: "/",
+	host: "mitron-videochatapp.herokuapp.com",
 	port: "3000",
 });
 
